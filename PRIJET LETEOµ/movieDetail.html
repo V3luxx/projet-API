@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        {{.Location.Name}}
+        Pays: {{.Location.Country}}
+        Région: {{.Location.Region}}
+        Latitude: {{.Location.Lat}}
+        Longitude: {{.Location.Lon}}
+        Temperature de zone: {{.Location.TimezoneID}}
+        Localisation temps{{.Location.Localtime}}
+        Heure local: {{.Location.LocaltimeEpoch}}
+        Heure d'Observation: {{.Current.ObservationTime}}
+        Temperature: {{.Current.Temperature}}
+        Code: {{.Current.WeatherCode}}
+        <img src="https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0002_sunny_intervals.png" alt="" />
+        Vitesse du vent{{.Current.WindSpeed}}
+        Degrée{{.Current.WindDegree}}
+        WindDir: {{.Current.WindDir}}
+        Pressure: {{.Current.Pressure}}
+        Precipitation: {{.Current.Precip}}
+        Humidité: {{.Current.Humidity}}
+        {{.Current.Feelslike}}
+        {{.Current.UvIndex}}
+        {{.Current.Visibility}}
+        {{.Current.IsDay}}
+    </p>
+</body>
+</html>
